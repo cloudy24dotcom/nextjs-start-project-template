@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SITE_URL } from "./Constants";
 
 export function getCurrentDate(separator = "-") {
   let newDate = new Date();
@@ -111,12 +112,12 @@ const Schema = ({
           __html: JSON.stringify({
             "@context": "http://schema.org/",
             "@type": "Corporation",
-            "@id": "https://cloudy24.com/",
+            "@id": { SITE_URL },
             name: "Cloudy24",
             legalName: "Cloudy24",
             description:
               "Cloudy24 offers web hosting, reseller hosting, wordpress hosting, business hosting.",
-            url: "https://cloudy24.com/",
+            url: { SITE_URL },
             address: {
               "@type": "PostalAddress",
               addressLocality: "Delhi",

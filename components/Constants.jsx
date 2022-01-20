@@ -1,21 +1,26 @@
 export const SITE_URL = "https://example.com";
-
+export const SITE_URL_ALTERNATE = "https://example.in";
+export const BRAND_NAME_FOR_META_TAGS = "Company INC";
+export const SITE_NAME = "Company INC";
 /* Twitter */ 
-export const TWITTER_USER_NAME = "vercel";
+export const TWITTER_USER_NAME = "@twitter_username";
 export const TWITTER_URL = "https://twitter.com/username";
 
 /* Instagram */ 
-export const INSTAGRAM_USER_NAME = "vercel";
+export const INSTAGRAM_USER_NAME = "in";
 export const INSTAGRAM_URL = "https://instagram.com/username";
+
+export const YANDEX_SITE_VERIFICATION = "Q1234";
+
+export const DOMAIN_VERIFY = "123WW";
 
 export const GOOGLE_SITE_VERIFICATION = "Q1234";
 export const GOOGLE_ANALYTICS = "UA-1234"; //WITH UA-XXXXXXXX
 export const TAWK_TO_URL = "https://embed.tawk.to/ABCDFGH/default"; //ONLY URL 
 
- 
-export const BRAND_NAME = "ACME";
-export const SITE_NAME_MULTILINE = ["ACME", "Conf"];
-export const SITE_NAME = "Company.co";
+export const  DCTERMS_SUBJECT = "";
+
+
 export const META_DESCRIPTION =
   "This is an open source demo that Next.js developers can clone, deploy, and fully customize for events. Created through collaboration of marketers, designers, and developers at Vercel.";
 export const SITE_DESCRIPTION =
