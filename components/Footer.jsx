@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { TWITTER_URL, INSTAGRAM_URL } from '../components/constants';
+import { TWITTER_URL, INSTAGRAM_URL } from '../components/Constants';
 
 var imageValueMonth = new Date();
 var todaysDate = imageValueMonth.getFullYear();
