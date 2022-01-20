@@ -32,3 +32,28 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## IN MAC
+
+Step 1 : download node js from website Step 2 : Go tho the folder and install node js module by run this command " npm -i install " Setp 3 : run "npm run dev" and Lunch browser. Step 4 : test application . Done.
+
+=========
+
+// server.js const { createServer } = require('http') const { parse } = require('url') const next = require('next')
+
+const dev = process.env.NODE_ENV !== 'production' const app = next({ dev }) const handle = app.getRequestHandler()
+
+app.prepare().then(() => { createServer((req, res) => { // Be sure to pass true as the second argument to url.parse. // This tells it to parse the query portion of the URL. const parsedUrl = parse(req.url, true) const { pathname, query } = parsedUrl
+
+if (pathname === '/a') {
+  app.render(req, res, '/a', query)
+} else if (pathname === '/b') {
+  app.render(req, res, '/b', query)
+} else {
+  handle(req, res, parsedUrl)
+}
+
+}).listen(3000, (err) => { if (err) throw err console.log('> Ready on http://localhost:3001') }) })
+
+===========
